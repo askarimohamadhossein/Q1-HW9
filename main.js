@@ -43,3 +43,6 @@ function sortTable(columnIndex) {
   tableBody.innerHTML = "";
   rows.forEach((row) => tableBody.appendChild(row));
 }
+
+nameHeader.addEventListener("click", () => sortTable(0));
+rateHeader.addEventListener("click", () => sortTable(1));
