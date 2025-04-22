@@ -30,12 +30,13 @@ signupBtn.addEventListener("click", () => {
   tableBody.appendChild(row);
 });
 
-function sortTable(columnIndex) {
+function sortTable(index) {
   const rows = Array.from(tableBody.querySelectorAll("tr"));
 
   rows.sort((a, b) => {
-    const aText = a.cells[columnIndex].textContent.trim();
-    const bText = b.cells[columnIndex].textContent.trim();
+    const aText = a.cells[index].textContent.trim();
+    const bText = b.cells[index].textContent.trim();
+    console.log(aText, bText);
 
     return isNaN(aText) ? aText.localeCompare(bText) : aText - bText;
   });
