@@ -30,3 +30,20 @@ body {
   gap: 30px;
   border-radius: 10px;
 }
+.form button {
+  width: 60px;
+  border: none;
+  background-color: rgb(2, 164, 72);
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.form input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 30px;
+}
