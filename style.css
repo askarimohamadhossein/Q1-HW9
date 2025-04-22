@@ -85,3 +85,15 @@ tr:hover {
   );
   color: black;
 }
+.tableName {
+  width: 80%;
+}
+
+.delete {
+  width: 100px;
+  border: none;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
