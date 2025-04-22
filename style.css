@@ -47,3 +47,41 @@ body {
   border: none;
   margin-bottom: 30px;
 }
+table {
+  background-color: white;
+  color: black;
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 3px solid #bcffb3;
+  padding: 8px;
+  text-align: start;
+  color: black;
+}
+
+th {
+  background-color: #09cd4a;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even) {
+  background-color: #cdffbd;
+  color: black;
+}
+
+tr:hover {
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgb(233, 200, 255) 0%,
+    rgb(254, 137, 137) 50%,
+    rgb(254, 217, 166) 100%
+  );
+  color: black;
+}
