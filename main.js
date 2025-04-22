@@ -29,3 +29,17 @@ signupBtn.addEventListener("click", () => {
   row.appendChild(actionCell);
   tableBody.appendChild(row);
 });
+
+function sortTable(columnIndex) {
+  const rows = Array.from(tableBody.querySelectorAll("tr"));
+
+  rows.sort((a, b) => {
+    const aText = a.cells[columnIndex].textContent.trim();
+    const bText = b.cells[columnIndex].textContent.trim();
+
+    return isNaN(aText) ? aText.localeCompare(bText) : aText - bText;
+  });
+
+  tableBody.innerHTML = "";
+  rows.forEach((row) => tableBody.appendChild(row));
+}
